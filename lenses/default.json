@@ -1,0 +1,17 @@
+{
+  "name": "Balanced overview",
+  "purpose": "See the whole landscape for a question: core, margins and long tail, with no source type favoured.",
+  "engines": [
+    "marginalia",
+    "brave",
+    "mojeek"
+  ],
+  "extra_queries": [],
+  "type_weights": {},
+  "goggle": "",
+  "language_target": {},
+  "max_per_domain": 3,
+  "width": "tail",
+  "slice_by": "source_type",
+  "quality_floor": "label"
+}

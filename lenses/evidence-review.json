@@ -1,0 +1,26 @@
+{
+  "name": "Evidence review",
+  "purpose": "Weigh primary research and official sources above commentary and commerce.",
+  "engines": [
+    "marginalia",
+    "brave",
+    "mojeek"
+  ],
+  "extra_queries": [
+    "{q} systematic review",
+    "{q} study"
+  ],
+  "type_weights": {
+    "research": 1.5,
+    "government": 1.3,
+    "reference": 1.1,
+    "forum": 0.8,
+    "commercial": 0.5
+  },
+  "goggle": "! Evidence review lens (Goggles syntax)\n/best-$downrank=4\n/coupon$discard\n/review$boost=2",
+  "language_target": {},
+  "max_per_domain": 2,
+  "width": "margin",
+  "slice_by": "source_type",
+  "quality_floor": "label"
+}

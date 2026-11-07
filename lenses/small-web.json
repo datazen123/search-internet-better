@@ -1,0 +1,23 @@
+{
+  "name": "Small and independent web",
+  "purpose": "Surface personal sites, forums and independent research that popularity ranking cuts off.",
+  "engines": [
+    "marginalia",
+    "brave",
+    "mojeek"
+  ],
+  "extra_queries": [],
+  "type_weights": {
+    "personal": 1.6,
+    "forum": 1.3,
+    "commercial": 0.4,
+    "news": 0.8
+  },
+  "goggle": "! Small web lens\n$downrank=2,site=bignews.example",
+  "language_target": {},
+  "max_per_domain": 1,
+  "width": "tail",
+  "slice_by": "source_type",
+  "quality_floor": "label",
+  "rotation_seed": "daily"
+}

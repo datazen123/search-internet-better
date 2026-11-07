@@ -1,0 +1,23 @@
+{
+  "name": "Multilingual view",
+  "purpose": "Show how the topic looks across languages; flag when English crowds others out.",
+  "engines": [
+    "marginalia",
+    "brave",
+    "mojeek"
+  ],
+  "extra_queries": [],
+  "type_weights": {},
+  "goggle": "",
+  "language_target": {
+    "latin": 0.5,
+    "ko": 0.1,
+    "zh": 0.1,
+    "ja": 0.1,
+    "hi": 0.1
+  },
+  "max_per_domain": 2,
+  "width": "tail",
+  "slice_by": "language",
+  "quality_floor": "label"
+}

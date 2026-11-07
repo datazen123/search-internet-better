@@ -1,0 +1,662 @@
+{
+ "_notice": "SYNTHETIC SAMPLE for offline development. Fictional .example domains. Not real search results.",
+ "query_hint": "microplastics health effects",
+ "results": [
+  {
+   "url": "https://journal-a.example/articles/microplastics-human-health-review",
+   "title": "Microplastics and human health: a systematic review",
+   "snippet": "Review of 120 studies on microplastic particles in human tissue and possible health effects.",
+   "type": "research",
+   "lang": "en",
+   "engines": {
+    "a": 1,
+    "b": 2,
+    "c": 1
+   },
+   "date": "2026-03-02",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://health-agency.gov.example/microplastics/factsheet",
+   "title": "Microplastics: what we know about health effects",
+   "snippet": "Government fact sheet on exposure routes, current evidence and open questions.",
+   "type": "government",
+   "lang": "en",
+   "engines": {
+    "a": 2,
+    "b": 1,
+    "c": 3
+   },
+   "date": "2026-06-11",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://encyclopedia.example/wiki/Microplastics",
+   "title": "Microplastics",
+   "snippet": "Overview of sources, environmental spread and health research on microplastics.",
+   "type": "reference",
+   "lang": "en",
+   "engines": {
+    "a": 3,
+    "b": 3,
+    "c": 2
+   },
+   "date": "2026-10-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://bignews.example/science/microplastics-blood-study",
+   "title": "Microplastics found in human blood, study says",
+   "snippet": "News report on a study detecting plastic particles in blood samples.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 4,
+    "b": 5,
+    "c": 4
+   },
+   "date": "2025-11-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://bignews.example/health/microplastics-heart",
+   "title": "Plastic particles linked to heart risk",
+   "snippet": "Coverage of a cohort study on microplastics in arterial plaque.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 5,
+    "b": 4,
+    "c": 6
+   },
+   "date": "2025-09-02",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://bignews.example/opinion/plastic-panic",
+   "title": "Opinion: is the microplastics panic overblown?",
+   "snippet": "Columnist argues evidence on health effects is still preliminary.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 6,
+    "b": 7
+   },
+   "date": "2026-01-15",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://bignews.example/explainers/microplastics-101",
+   "title": "Microplastics explained in 5 charts",
+   "snippet": "Explainer on what microplastics are and where they come from.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 7,
+    "b": 6,
+    "c": 8
+   },
+   "date": "2026-02-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://who-like.int.example/news/microplastics-drinking-water",
+   "title": "Microplastics in drinking-water: evidence assessment",
+   "snippet": "International body's assessment of risks from microplastics in drinking water.",
+   "type": "government",
+   "lang": "en",
+   "engines": {
+    "a": 8,
+    "c": 5
+   },
+   "date": "2025-08-08",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://shop-filter.example/best-water-filters-microplastics",
+   "title": "10 best water filters that remove microplastics (2026)",
+   "snippet": "Our top picks for filters that remove microplastics. Affiliate links.",
+   "type": "commercial",
+   "lang": "en",
+   "engines": {
+    "a": 9,
+    "b": 8
+   },
+   "date": "2026-09-30",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://shop-filter.example/blog/microplastics-health-risks",
+   "title": "Microplastics health risks: the complete guide",
+   "snippet": "Everything you need to know about microplastics and your health, plus product picks.",
+   "type": "commercial",
+   "lang": "en",
+   "engines": {
+    "a": 10,
+    "b": 9,
+    "c": 9
+   },
+   "date": "2026-10-12",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://univ-b.ac.example/research/microplastics-gut",
+   "title": "Gut microbiome changes after microplastic exposure in mice",
+   "snippet": "University lab results on gut effects; animal study, not human.",
+   "type": "research",
+   "lang": "en",
+   "engines": {
+    "a": 14
+   },
+   "date": "2026-04-04",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://preprints.example/2026.05.11/microplastic-inhalation",
+   "title": "Inhaled microplastics in indoor air: exposure estimates",
+   "snippet": "Preprint estimating daily inhaled particle counts in homes.",
+   "type": "research",
+   "lang": "en",
+   "engines": {
+    "b": 12
+   },
+   "date": "2026-05-11",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://env-ministry.go.example.kr/microplastics",
+   "title": "미세플라스틱 건강 영향 조사 결과",
+   "snippet": "환경부의 미세플라스틱 인체 노출 및 건강 영향 조사 결과 요약.",
+   "type": "government",
+   "lang": "ko",
+   "engines": {
+    "c": 11
+   },
+   "date": "2026-07-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://news-kr.example/science/2026/microplastics",
+   "title": "미세플라스틱, 혈액에서도 검출… 건강 영향은?",
+   "snippet": "국내 연구진이 혈액 시료에서 미세플라스틱을 검출했다는 보도.",
+   "type": "news",
+   "lang": "ko",
+   "engines": {
+    "c": 14
+   },
+   "date": "2026-03-18",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://cas-like.example.cn/news/weisuliao",
+   "title": "微塑料对人体健康影响的研究进展",
+   "snippet": "研究综述：微塑料在人体组织中的检测及潜在健康影响。",
+   "type": "research",
+   "lang": "zh",
+   "engines": {
+    "b": 15
+   },
+   "date": "2026-02-22",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://forum-health.example/t/microplastics-should-i-worry",
+   "title": "Microplastics: should I actually worry?",
+   "snippet": "Community thread with links to studies and personal experiences.",
+   "type": "forum",
+   "lang": "en",
+   "engines": {
+    "a": 13,
+    "b": 16
+   },
+   "date": "2026-08-14",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://ngo-ocean.org.example/report-microplastics-health",
+   "title": "Report: microplastics from ocean to body",
+   "snippet": "NGO report tracing microplastics from the ocean into food and people.",
+   "type": "government",
+   "lang": "en",
+   "engines": {
+    "b": 11,
+    "c": 12
+   },
+   "date": "2025-12-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://revista-ciencia.example/microplasticos-salud",
+   "title": "Microplásticos y salud: lo que dice la evidencia",
+   "snippet": "Artículo de divulgación sobre los efectos de los microplásticos en la salud.",
+   "type": "news",
+   "lang": "es",
+   "engines": {
+    "c": 13
+   },
+   "date": "2026-06-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://journal-c.example/doi/10.0000/mp-placenta",
+   "title": "Microplastics detected in human placenta",
+   "snippet": "Peer-reviewed study detecting microplastic particles in placental tissue.",
+   "type": "research",
+   "lang": "en",
+   "engines": {
+    "a": 12,
+    "c": 10
+   },
+   "date": "2025-07-07",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://bignews.example/world/microplastics-un-treaty",
+   "title": "Plastics treaty talks and the health question",
+   "snippet": "News on negotiations and health arguments in a global plastics treaty.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 11
+   },
+   "date": "2026-08-21",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://smallblog.example/2026/03/i-tested-my-tap-water",
+   "title": "I tested my tap water for microplastics",
+   "snippet": "A hobbyist's account of sending water samples to a lab, with photos.",
+   "type": "personal",
+   "lang": "en",
+   "engines": {
+    "b": 31
+   },
+   "date": "2026-03-09",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://citizen-lab.example/microplastics-beach-survey",
+   "title": "Citizen science: microplastics on 40 beaches",
+   "snippet": "Volunteer survey data on microplastic counts along a coastline.",
+   "type": "research",
+   "lang": "en",
+   "engines": {
+    "c": 27
+   },
+   "date": "2026-01-30",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://habari-afya.example/plastiki-ndogo-afya",
+   "title": "Plastiki ndogo na afya ya binadamu",
+   "snippet": "Makala kuhusu madhara ya plastiki ndogo kwa afya ya binadamu.",
+   "type": "news",
+   "lang": "sw",
+   "engines": {
+    "a": 38
+   },
+   "date": "2026-04-15",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://hindi-vigyan.example/microplastic-swasthya",
+   "title": "माइक्रोप्लास्टिक और स्वास्थ्य पर प्रभाव",
+   "snippet": "माइक्रोप्लास्टिक के स्वास्थ्य प्रभावों पर एक लेख।",
+   "type": "news",
+   "lang": "hi",
+   "engines": {
+    "b": 34
+   },
+   "date": "2026-05-05",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://jp-kenkyu.ac.example.jp/mp-health",
+   "title": "マイクロプラスチックの健康影響に関する研究",
+   "snippet": "大学研究室によるマイクロプラスチックの健康影響の解説。",
+   "type": "research",
+   "lang": "ja",
+   "engines": {
+    "c": 30
+   },
+   "date": "2026-02-10",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://indie-researcher.example/notes/microplastics-methods",
+   "title": "Why microplastics measurements disagree",
+   "snippet": "Notes on lab contamination and measurement methods behind conflicting results.",
+   "type": "personal",
+   "lang": "en",
+   "engines": {
+    "a": 42
+   },
+   "date": "2026-07-19",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://local-paper.example/2026/04/river-microplastics",
+   "title": "Local river shows high microplastic levels",
+   "snippet": "Regional newspaper report on river sampling results.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "b": 40
+   },
+   "date": "2026-04-02",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://forum-chem.example/thread/9912",
+   "title": "Analytical chemists discuss microplastics detection limits",
+   "snippet": "Specialist forum thread on detection methods and false positives.",
+   "type": "forum",
+   "lang": "en",
+   "engines": {
+    "c": 35
+   },
+   "date": "2026-06-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://archive-gov.example/1998/plastics-health-report",
+   "title": "Plastics and public health (1998 report)",
+   "snippet": "Historical government report on plastic additives and health.",
+   "type": "government",
+   "lang": "en",
+   "engines": {
+    "a": 47
+   },
+   "date": "1998-05-01",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  },
+  {
+   "url": "https://content-farm.example/en/microplastics-health-guide",
+   "title": "Microplastics health effects: full guide",
+   "snippet": "Complete guide to microplastics health effects. Learn everything about microplastics health effects today.",
+   "type": "commercial",
+   "lang": "en",
+   "engines": {
+    "b": 20
+   },
+   "date": "2026-10-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ],
+   "noise_hint": "template text repeated across languages"
+  },
+  {
+   "url": "https://content-farm.example/es/microplastics-health-guide",
+   "title": "Efectos de los microplásticos en la salud: guía completa",
+   "snippet": "Complete guide to microplastics health effects. Learn everything about microplastics health effects today.",
+   "type": "commercial",
+   "lang": "es",
+   "engines": {
+    "b": 23
+   },
+   "date": "2026-10-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ],
+   "noise_hint": "template text repeated across languages"
+  },
+  {
+   "url": "https://content-farm.example/sw/microplastics-health-guide",
+   "title": "Madhara ya plastiki ndogo kwa afya: mwongozo kamili",
+   "snippet": "Complete guide to microplastics health effects. Learn everything about microplastics health effects today.",
+   "type": "commercial",
+   "lang": "sw",
+   "engines": {
+    "b": 26
+   },
+   "date": "2026-10-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ],
+   "noise_hint": "template text repeated across languages"
+  },
+  {
+   "url": "https://content-farm.example/yo/microplastics-health-guide",
+   "title": "Àwọn ipa microplastics lórí ìlera: ìtọ́sọ́nà pípé",
+   "snippet": "Complete guide to microplastics health effects. Learn everything about microplastics health effects today.",
+   "type": "commercial",
+   "lang": "yo",
+   "engines": {
+    "b": 29
+   },
+   "date": "2026-10-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ],
+   "noise_hint": "template text repeated across languages"
+  },
+  {
+   "url": "https://content-farm.example/ha/microplastics-health-guide",
+   "title": "Tasirin microplastics ga lafiya: cikakken jagora",
+   "snippet": "Complete guide to microplastics health effects. Learn everything about microplastics health effects today.",
+   "type": "commercial",
+   "lang": "ha",
+   "engines": {
+    "b": 32
+   },
+   "date": "2026-10-20",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ],
+   "noise_hint": "template text repeated across languages"
+  },
+  {
+   "url": "https://portal-news.example/syndicated/microplastics-blood-study",
+   "title": "Microplastics found in human blood, study says",
+   "snippet": "News report on a study detecting plastic particles in blood samples.",
+   "type": "news",
+   "lang": "en",
+   "engines": {
+    "a": 15,
+    "c": 7
+   },
+   "date": "2025-11-21",
+   "topics": [
+    "microplastics",
+    "health",
+    "effects",
+    "plastic",
+    "particles"
+   ]
+  }
+ ]
+}

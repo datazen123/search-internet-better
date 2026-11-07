@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experimental Search</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar">
+  <form id="form" class="searchrow" role="search">
+    <label class="sr" for="q">Search</label>
+    <input id="q" name="q" type="search" placeholder="Search the whole landscape…" value="microplastics health effects" autocomplete="off">
+    <label class="sr" for="lens">Lens</label>
+    <select id="lens" aria-label="Lens"></select>
+    <button type="submit" id="go">Search</button>
+  </form>
+  <p id="lensPurpose" class="purpose"></p>
+</header>
+
+<div id="banner" class="banner" hidden>Showing a <strong>synthetic sample</strong> (fictional .example sites), not real search results. Add API keys in <code>.env</code> to search the live web.</div>
+<div id="errors" class="errors" hidden></div>
+
+<main class="wrap">
+  <section class="viewcol" aria-label="Result landscape">
+    <div class="controls">
+      <div class="ctl">
+        <label for="width">View width</label>
+        <input id="width" type="range" min="0" max="2" step="1" value="2" aria-describedby="widthLabel">
+        <span id="widthLabel" class="ctlval">Core + margins + long tail</span>
+      </div>
+      <div class="ctl">
+        <label for="slice">Slices show</label>
+        <select id="slice"><option value="source_type">Source type</option><option value="language">Language</option><option value="engine">Engine</option></select>
+      </div>
+    </div>
+    <svg id="mountain" viewBox="0 0 640 640" role="img" aria-label="Mountain-peak view of results"></svg>
+    <p class="hint">Centre = strongest combined relevance. Rings: core, margins, long tail. Click a dot to see the result and why it's there.</p>
+    <div id="detail" class="detail" hidden></div>
+  </section>
+
+  <aside class="healthcol" aria-label="Health panel">
+    <h2>Health of this search</h2>
+    <div id="health"></div>
+    <div id="nudge" class="nudge" hidden></div>
+  </aside>
+
+  <section class="listcol" aria-label="Results list">
+    <h2>Results</h2>
+    <div id="list"></div>
+  </section>
+
+  <section class="lenscol" aria-label="Lens editor">
+    <details id="lensEditor">
+      <summary>Edit this lens (rules, weights, languages)</summary>
+      <p class="note">A lens is a small JSON file. <code>goggle</code> accepts Brave Goggles rules: <code>$boost=N,site=…</code>, <code>/path$downrank=N</code>, <code>$discard,site=…</code>. Lenses stay in your browser unless you export them.</p>
+      <label class="sr" for="lensJson">Lens JSON</label>
+      <textarea id="lensJson" spellcheck="false" rows="18"></textarea>
+      <div class="row">
+        <button type="button" id="runLens">Search with this lens</button>
+        <button type="button" id="saveLens">Save in this browser</button>
+        <button type="button" id="copyLens">Copy lens</button>
+        <span id="lensMsg" class="note" role="status"></span>
+      </div>
+    </details>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
