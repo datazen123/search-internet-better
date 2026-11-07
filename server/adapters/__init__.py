@@ -8,12 +8,14 @@ from .sample import SampleAdapter
 from .marginalia import MarginaliaAdapter
 from .brave import BraveAdapter
 from .mojeek import MojeekAdapter
+from .local import LocalIndexAdapter
 
 REGISTRY = {
     "sample": SampleAdapter,
     "marginalia": MarginaliaAdapter,
     "brave": BraveAdapter,
     "mojeek": MojeekAdapter,
+    "local": LocalIndexAdapter,
 }
 
 

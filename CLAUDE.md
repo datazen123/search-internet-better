@@ -27,13 +27,16 @@ and reports how biased or noisy each search is. Read `docs/DESIGN.md` before cha
 - `server/lens.py` — lens schema + Brave-Goggles-subset parser (our own multiplier semantics, documented in the file).
 - `server/signals.py` — source type, script-based language guess, noise flags (simple and transparent on purpose).
 - `server/metrics.py` — health panel (top-3 share, Gini, entropy, exposure Gini, language/type mix, noise share).
-- `server/adapters/` — `sample` (synthetic, offline), `marginalia`, `brave`, `mojeek`.
+- `server/adapters/` — `sample` (synthetic, offline), `marginalia`, `brave`, `mojeek`, `local` (own index).
+- `server/index/` — own long-tail index: SQLite FTS5/BM25 store, SimHash near-dups, WET/WARC + Common Crawl
+  ingest, RFC 9309 robots parser, polite crawler. CLI: `python3 -m server.index --help`. Policy: `docs/CRAWLER.md`.
 - `web/` — no-build front end: mountain-peak view (SVG), health panel, list, lens editor.
 - `lenses/*.json` — built-in lenses. `data/sample_results.json` — SYNTHETIC sample, fictional `.example` domains.
 - `docs/` — design + research notes (with sources) carried over from the research phase.
 
 ## Commands
 - Run: `python3 -m server.app` → http://localhost:8000 (no dependencies; Python 3.10+).
+- Own index: `python3 -m server.index add FILE.wet.gz` · `commoncrawl --crawl CC-MAIN-…` · `crawl --seeds seeds.txt` · `stats` · `remove`.
 - Test: `python3 -m unittest discover -s tests -t .`
 - With live engines: copy `.env.example` to `.env` and add keys. With no keys, the sample adapter runs and the UI shows a synthetic-data banner.
 

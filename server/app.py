@@ -3,7 +3,7 @@
 Run:  python3 -m server.app   then open http://localhost:8000
 API:  GET  /api/search?q=...&lens=<id>&depth=50
       POST /api/search  {"q": "...", "lens": {...lens json...}, "depth": 50}
-      GET  /api/lenses    GET /api/status
+      GET  /api/lenses    GET /api/status    GET /api/index (own-index transparency stats)
 Nothing is written to disk: results live only for the request (vendor terms; privacy).
 """
 from __future__ import annotations
@@ -60,6 +60,11 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(load_lens(u.path.rsplit("/", 1)[-1]).to_dict())
         if u.path == "/api/status":
             return self._json({"adapters": adapter_status()})
+        if u.path == "/api/index":
+            from .adapters.local import LocalIndexAdapter
+            idx = LocalIndexAdapter._open()
+            return self._json({"stats": idx.stats() if idx else None,
+                               "note": None if idx else "No own index yet: python3 -m server.index --help"})
         return super().do_GET()
 
     def do_POST(self):

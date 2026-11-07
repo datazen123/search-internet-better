@@ -31,6 +31,7 @@ def health(results: list[dict], lens_target: dict[str, float], engines_queried: 
     types = Counter(r["source_type"] for r in shown)
     zones = Counter(r["zone"] for r in shown)
     noisy = sum(1 for r in shown if r["noise_flags"])
+    own = sum(1 for r in shown if "local" in r["engines"])
     agreement = Counter(len(r["engines"]) for r in shown)
     # position-weighted exposure (log discount, as in DCG) per domain
     exposure = Counter()
@@ -51,5 +52,6 @@ def health(results: list[dict], lens_target: dict[str, float], engines_queried: 
         "language_target_gap": target_gap,
         "source_type_mix": {k: round(v / n, 3) for k, v in types.most_common()},
         "noise_share": round(noisy / n, 3),
+        "own_index_share": round(own / n, 3),   # share of results our own long-tail index contributed
         "exposure_gini": round(gini(list(exposure.values())), 3),
     }

@@ -62,6 +62,9 @@ def merge(raw: list[RawResult]) -> list[dict]:
         m["queries"].add(r.query)
         if len(r.snippet) > len(m["snippet"]):
             m["snippet"] = r.snippet
+        for k in ("provenance", "language_reason", "noise_hint"):
+            if k in r.extra and k not in m["extra"]:
+                m["extra"][k] = r.extra[k]
     out = list(by_key.values())
     for m in out:
         m["queries"] = sorted(m["queries"])
@@ -75,6 +78,9 @@ def add_signals(items: list[dict], engines_queried: list[str]) -> None:
         m["registered_domain"] = registered_domain(m["url"])
         m["source_type"], m["source_type_reason"] = source_type(m["url"], m["extra"].get("source_type_hint", ""))
         m["language"], m["language_reason"] = guess_language(m["title"] + " " + m["snippet"], m["language_supplied"])
+        if m["language_supplied"] and m["extra"].get("language_reason"):
+            m["language_reason"] = m["extra"]["language_reason"]
+        m["provenance"] = m["extra"].get("provenance") or {}
         ranks = list(m["engines"].values())
         m["fusion"] = sum(1 / (RRF_K + r) for r in ranks)
         m["agreement"] = len(ranks) / n_eng
@@ -113,6 +119,10 @@ def rerank(items: list[dict], lens: Lens) -> list[dict]:
         why = []
         base = m["fusion"] / max_fusion
         why.append(f"found by {len(m['engines'])} engine(s); best rank {min(m['engines'].values())}")
+        prov = m.get("provenance") or {}
+        if prov.get("index") == "own":
+            why.append(f"own index: BM25 {prov.get('bm25')} ({prov.get('tokenizer')} tokenizer, title x5); "
+                       f"from {prov.get('origin')}; {prov.get('licence')}")
         w = lens.type_weights.get(m["source_type"], 1.0)
         if w != 1.0:
             why.append(f"source type '{m['source_type']}' weighted x{w}")

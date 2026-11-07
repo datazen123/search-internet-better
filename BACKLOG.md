@@ -3,10 +3,10 @@
 Ordered roughly by the prototype plan in docs/DESIGN.md. Check items off in PRs.
 
 ## Now (v0.x)
-- [ ] Verify and enable the Marginalia adapter (free non-commercial key) against https://about.marginalia-search.com/article/api/
+- [ ] Verify and enable the Marginalia adapter (blocked 2026-11-07: docs host not reachable from the build environment) (free non-commercial key) against https://about.marginalia-search.com/article/api/
 - [ ] Verify and enable one paid engine: Brave ($5/1k, ~200 results/query) or Mojeek (£2–3/1k)
 - [ ] Language ID: replace script-only guess with fastText lid.176 (or CLD3) for Latin-script languages
-- [ ] Near-duplicate detection: replace token Jaccard with SimHash (64-bit, Hamming ≤ 3)
+- [ ] Near-duplicate detection: replace token Jaccard with SimHash (64-bit, Hamming ≤ 3) in the merge step (done inside the own index: `server/index/simhash.py`)
 - [ ] Public-suffix list for registered domains (replace the approximation in `server/urlnorm.py`)
 - [ ] Rank-uncertainty bar per result in the UI (data already in `rank_spread`)
 - [ ] "Random order within band" toggle (mitigates position effects)
@@ -16,7 +16,11 @@ Ordered roughly by the prototype plan in docs/DESIGN.md. Check items off in PRs.
 - [ ] Multilingual fan-out: translated query variants per lens language target, translations labelled
 - [ ] Query-aspect diversification (xQuAD-style) using reworded queries
 - [ ] Topic clustering of the tail (Carrot2) as an extra slice mode
-- [ ] Own long-tail sample: BM25 index over a Common Crawl slice (WET), labelled by licence
+- [x] Own long-tail sample: BM25 index over a Common Crawl slice (WET), labelled by licence (`server/index/`, `local` adapter)
+- [ ] Own index: run a first real Common Crawl sample once data.commoncrawl.org is reachable; record stats in docs
+- [ ] Crawler: conditional GET + re-crawl schedule, sitemaps, Web Bot Auth (RFC 9421) signing
+- [ ] Own index: per-language analysers (Kuromoji / Nori / smartcn equivalents) instead of trigram fallback for CJK
+- [ ] Seed lists per language/region for the crawler (national registries, universities, government)
 - [ ] Audit harness: fixed query set, monthly bias/noise report (Metaxa et al. audit method)
 - [ ] Exposure rotation over time (Biega et al. amortised fairness) beyond the current seeded jitter
 

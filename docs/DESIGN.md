@@ -72,6 +72,10 @@ adapters enforce terms and attribution. Own crawling follows RFC 9309. No query 
 4. Health panel ✅ (rank-uncertainty bar pending) 5. Multilingual fan-out 6. Common Crawl long-tail sample
 7. Audit harness. See `BACKLOG.md`.
 
+Step 6 started: `server/index/` (own BM25 index fed by Common Crawl WET/WARC or the polite crawler) with
+the `local` adapter, provenance per result, an `own_index_share` health metric and `/api/index` stats.
+See `docs/CRAWLER.md`.
+
 ## Open decisions (owner)
 - Which engines first (Marginalia free + Brave or Mojeek)?
 - Personal tool or public product (storage rights, commercial keys)?

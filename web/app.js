@@ -109,7 +109,7 @@
   function itemHtml(r, full) {
     const ranks = Object.entries(r.engines).map(([e, k]) => `${esc(e)} #${k}`).join(", ");
     return `<div class="tags"><span class="tag z-${r.zone}">${ZONE_LABEL[r.zone]}</span><span class="tag">${esc(r.source_type)}</span><span class="tag">lang: ${esc(r.language)}</span><span class="tag">${ranks}</span>${r.rank_spread != null ? `<span class="tag">rank spread ±${r.rank_spread}</span>` : ""}${r.noise_flags.map((f) => `<span class="tag noise">${esc(f)}</span>`).join("")}</div>` +
-      (full ? `<ul class="why">${r.why.map((w) => `<li>${esc(w)}</li>`).join("")}<li>source type: ${esc(r.source_type_reason)}; language: ${esc(r.language_reason)}</li></ul>` : "");
+      (full ? `<ul class="why">${r.why.map((w) => `<li>${esc(w)}</li>`).join("")}<li>source type: ${esc(r.source_type_reason)}; language: ${esc(r.language_reason)}</li>${r.provenance && r.provenance.fetched ? `<li>own index copy fetched ${esc(r.provenance.fetched)}${r.provenance.truncated ? " (truncated)" : ""}</li>` : ""}</ul>` : "");
   }
 
   function renderDetail() {
@@ -136,6 +136,7 @@
       <div class="metric"><span>Attention concentration (Gini)</span><b>${h.exposure_gini}</b></div>
       <div class="metric"><span>Found by N engines</span><b>${agree}</b></div>
       <div class="metric"><span>Flagged as possible noise</span><b>${pct(h.noise_share)}</b></div>
+      ${h.own_index_share ? `<div class="metric"><span>From our own index</span><b>${pct(h.own_index_share)}</b></div>` : ""}
       <div class="metric" style="display:block"><span>Language mix</span>${bar(h.language_mix)}${gap ? `<div class="note">vs your lens target: ${esc(gap)}</div>` : ""}</div>
       <div class="metric" style="display:block;border:0"><span>Source-type mix</span>${bar(h.source_type_mix)}</div>
       <p class="note">Engines: ${esc(h.engines_queried.join(", "))}. ${state.data.discarded_count} result(s) removed by lens rules.</p>`;

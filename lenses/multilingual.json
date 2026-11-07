@@ -4,7 +4,8 @@
   "engines": [
     "marginalia",
     "brave",
-    "mojeek"
+    "mojeek",
+    "local"
   ],
   "extra_queries": [],
   "type_weights": {},
